@@ -2,23 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <meta
+      name="description"
+      content="Robot Blaze Dash Adventure – A high-speed platformer where you dash through worlds, collect power-ups, and defeat enemies!"
+    />
+    <meta
+      name="keywords"
+      content="Robot Blaze Dash Adventure, platform game, endless runner, action game, speedrun, leaderboard challenge"
+    />
+    <meta name="author" content="Wild Games" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://blazetopstar.com" />
+
     <link rel="stylesheet" href="./scss/styles.scss" />
   </head>
   <body>
-    <load ="partials/header.html" />
+    <header><load src="partials/header.html" /></header>
 
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
-    </section>
+    <main>
+      <load src="partials/hero.html" />
+    </main>
 
-    <!-- Loads the specified .html file -->
-    <load ="partials/vite-promo.html" />
-
+    <footer><load src="partials/footer.html" /></footer>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
