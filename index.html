@@ -16,16 +16,14 @@
     <link rel="canonical" href="https://blazetopstar.com" />
 
     
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lora:wght@400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap"
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/stp-8617/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/stp-8617/assets/index-af9dd50b.css">
+    <link rel="stylesheet" href="/stp-8617/assets/index-0532f0ae.css">
   </head>
   <body>
     <!-- <header><header class="header">
@@ -43,64 +41,69 @@
       <!-- ENOENT: no such file or directory, open '/home/runner/work/stp-8617/stp-8617/src/partials/hero.html' -->
       <div class="lb-container">
   <h2 class="lb-title" id="lb-id">Competitive Leaderboards</h2>
-  <p class="lb-description">
-    Think you're the fastest robot? Compete for first place! Global Rankings –
-    See how you compete against other players. Speedrun Challenges – Finish
-    levels in record time. Weekly Rewards – Exclusive prizes for the highest
-    ranked players. Leaderboard Updates – Track your progress and aim higher!
-    Climb the leaderboard and prove that you are the ultimate dash master!
-  </p>
+  <div class="mobile-only">
+    <ul class="lb-list-mob">
+      <li class="lb-item-mob">
+        <p class="lb-description-mob">
+          Think you're the fastest robot?<br />Compete for first place! Global
+        </p>
+        <div class="lb-item-img-mob"></div>
+        <p class="lb-item-descr-mob">Global rankings</p>
+      </li>
+      <li class="lb-item-mob">
+        <p class="lb-description-mob">
+          Rankings – See how you compete against other players.
+        </p>
+        <div class="lb-item-img-mob"></div>
+        <p class="lb-item-descr-mob">Speedrun challenges</p>
+      </li>
+      <li class="lb-item-mob">
+        <p class="lb-description-mob">
+          Speedrun Challenges – Finish levels<br />in record time.
+        </p>
+        <div class="lb-item-img-mob"></div>
+        <p class="lb-item-descr-mob">Weekly rewards</p>
+      </li>
+      <li class="lb-item-mob">
+        <p class="lb-description-mob">
+          Leaderboard Updates – Track your progress and aim higher! Climb the
+          leaderboard and prove that you are<br />the ultimate dash master!
+        </p>
+        <div class="lb-item-img-mob"></div>
+        <p class="lb-item-descr-mob">Leaderboard updates</p>
+      </li>
+    </ul>
+  </div>
 
-  <ul class="lb-list">
-    <li class="lb-item">
-      <img
-        class="lb-item-img"
-        srcset="
-          ./img/leaderboards/global-rankings-min.png    1x,
-          ./img/leaderboards/global-rankings@2x-min.png 2x
-        "
-        src="./img/leaderboards/global-rankings-min.png"
-        alt="global-rankings"
-      />
-      <p class="lb-item-descr">Global rankings</p>
-    </li>
-    <li class="lb-item">
-      <img
-        class="lb-item-img"
-        srcset="
-          ./img/leaderboards/speedrun-challenges-min.png    1x,
-          ./img/leaderboards/speedrun-challenges@2x-min.png 2x
-        "
-        src="./img/leaderboards/speedrun-challenges-min.png"
-        alt="speedrun-challenges"
-      />
-      <p class="lb-item-descr">Speedrun challenges</p>
-    </li>
-    <li class="lb-item">
-      <img
-        class="lb-item-img"
-        srcset="
-          ./img/leaderboards/weekly-rewards-min.png    1x,
-          ./img/leaderboards/weekly-rewards@2x-min.png 2x
-        "
-        src="./img/leaderboards/weekly-rewards-min.png"
-        alt="weekly-rewards"
-      />
-      <p class="lb-item-descr">Weekly rewards</p>
-    </li>
-    <li class="lb-item">
-      <img
-        class="lb-item-img"
-        srcset="
-          ./img/leaderboards/leaderboard-updates-min.png    1x,
-          ./img/leaderboards/leaderboard-updates@2x-min.png 2x
-        "
-        src="./img/leaderboards/leaderboard-updates-min.png"
-        alt="leaderboard-updates"
-      />
-      <p class="lb-item-descr">Leaderboard updates</p>
-    </li>
-  </ul>
+  <div class="desktop-only">
+    <p class="lb-description-desk">
+      Think you're the fastest robot? Compete for first place! Global Rankings –
+      See how you compete against other players. Speedrun Challenges – Finish
+      levels in record time. Weekly Rewards – Exclusive prizes for the highest
+      ranked players. Leaderboard Updates – Track your progress and aim higher!
+      Climb the leaderboard and prove that you are the ultimate dash master!
+    </p>
+
+    <ul class="lb-list-desk">
+      <li class="lb-item-desk">
+        <div class="lb-item-img-desk"></div>
+        <p class="lb-item-descr-desk">Global rankings</p>
+      </li>
+      <li class="lb-item-desk">
+        <div class="lb-item-img-desk"></div>
+        <p class="lb-item-descr-desk">Speedrun challenges</p>
+      </li>
+      <li class="lb-item-desk">
+        <div class="lb-item-img-desk"></div>
+        <p class="lb-item-descr-desk">Weekly rewards</p>
+      </li>
+      <li class="lb-item-desk">
+        <div class="lb-item-img-desk"></div>
+        <p class="lb-item-descr-desk">Leaderboard updates</p>
+      </li>
+    </ul>
+  </div>
+
   <p class="lb-text">
     Climb the leaderboard and prove that you are the best jerk master!
   </p>
