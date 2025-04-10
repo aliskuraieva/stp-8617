@@ -13,18 +13,20 @@
 }
 
 .gl-text {
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+.gl-intro-text {
   text-align: center;
   font-size: 16px;
+  margin-top: 50px;
   margin-bottom: 80px;
 }
 
 .gl-description-mob {
   font-size: 16px;
   margin-bottom: 30px;
-}
-
-.gl-mobile-only {
-  margin-bottom: 20px;
 }
 
 .highlight {
@@ -116,6 +118,12 @@
   }
 
   .gl-text {
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 70px;
+  }
+
+  .gl-intro-text {
     font-size: 20px;
     margin-bottom: 140px;
   }
@@ -133,7 +141,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     align-items: center;
   }
 
