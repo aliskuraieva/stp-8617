@@ -43,7 +43,7 @@
 }
 
 @include media(mobile) {
-  .desktop-only {
+  .lb-desktop-only {
     display: none;
   }
 
@@ -87,11 +87,11 @@
 }
 
 @include media(desktop) {
-  .mobile-only {
+  .lb-mobile-only {
     display: none;
   }
 
-  .desktop-only {
+  .lb-desktop-only {
     display: block;
   }
 
@@ -103,7 +103,7 @@
   .lb-title {
     margin-top: 70px;
     margin-bottom: 24px;
-    font-size: 48px;
+    font-size: 36px;
     text-align: left;
   }
 
