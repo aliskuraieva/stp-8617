@@ -1,0 +1,111 @@
+.review-container {
+  padding: 80px 16px 0 16px;
+}
+
+.review-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: $_color_teal;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.review-card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.review-card-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.review-card-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: $_color_light;
+}
+
+.review-description {
+  display: none;
+}
+
+@include media(desktop) {
+  .review-container {
+    padding: 140px 40px 0 40px;
+  }
+
+  .review-title {
+    font-size: 48px;
+    color: #e5e7eb;
+    text-align: start;
+    margin-bottom: 70px;
+    line-height: 48px;
+  }
+
+  .review-card-container {
+    position: relative;
+  }
+
+  .review-card-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 236px;
+    row-gap: 555px;
+    background-image: image-set(
+      url('/img/review/desktop/image-main.png') 1x,
+      url('/img/review/desktop/image-main@2x.png') 2x
+    );
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center top 242px;
+  }
+
+  .review-description {
+    display: block;
+    position: absolute;
+    top: 378px;
+    right: 50%;
+    transform: translateX(50%);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: $_color_light;
+    max-width: 289px;
+  }
+
+  .review-card-item {
+    position: relative;
+    border: 8px solid $_color_teal;
+    width: 442px;
+    height: 289px;
+  }
+
+  .review-card-image {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 8px solid $_color_teal;
+    border-radius: 16px;
+  }
+
+  .review-card-item:nth-child(1) .review-card-image,
+  .review-card-item:nth-child(3) .review-card-image {
+    right: -27px;
+  }
+
+  .review-card-item:nth-child(2) .review-card-image,
+  .review-card-item:nth-child(4) .review-card-image {
+    left: -27px;
+  }
+
+  .review-card-text {
+    display: none;
+  }
+}
