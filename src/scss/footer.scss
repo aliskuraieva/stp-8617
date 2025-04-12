@@ -1,14 +1,6 @@
-.footer {
-  background-color: #95b9b4;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
 .footer-container {
-  max-width: 320px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 16px;
+  background-color: #95b9b4 !important;
+  padding: 40px 16px 40px 16px;
 }
 
 .footer-nav {
@@ -27,16 +19,15 @@
   text-align: center;
   font-size: 16px;
 }
+@include media(mobile) {
+  .footer-span-desk {
+    display: none;
+  }
+}
 
 @include media(desktop) {
-  .footer {
-    padding-top: 70px;
-    padding-bottom: 40px;
-  }
-
   .footer-container {
-    max-width: 1200px;
-    padding: 0 40px;
+    padding: 70px 40px 40px 40px;
   }
   .footer-nav {
     margin-bottom: 60px;

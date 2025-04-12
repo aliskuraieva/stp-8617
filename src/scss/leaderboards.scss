@@ -1,12 +1,8 @@
 .lb-container {
-  max-width: 320px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 16px;
+  padding: 80px 16px 0 16px;
 }
 
 .lb-title {
-  margin-top: 40px;
   margin-bottom: 30px;
   font-size: 20px;
   color: #95b9b4;
@@ -39,7 +35,6 @@
   font-size: 16px;
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 77px;
 }
 
 @include media(mobile) {
@@ -96,12 +91,10 @@
   }
 
   .lb-container {
-    max-width: 1200px;
-    padding: 0 40px;
+    padding: 140px 40px 0 40px;
   }
 
   .lb-title {
-    margin-top: 70px;
     margin-bottom: 24px;
     font-size: 36px;
     text-align: left;
@@ -134,7 +127,6 @@
   .lb-text {
     font-size: 20px;
     margin-top: 50px;
-    margin-bottom: 140px;
   }
 
   .lb-list-desk .lb-item-desk:nth-child(1) .lb-item-img-desk {

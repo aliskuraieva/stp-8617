@@ -75,8 +75,6 @@ const animateImages = selector => {
           ? imageList[currentIndex].retina
           : imageList[currentIndex].src;
 
-      console.log('New image source:', newImage);
-
       let img = el.querySelector('img');
       if (!img) {
         img = document.createElement('img');

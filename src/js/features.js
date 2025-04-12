@@ -8,30 +8,30 @@ function createRotator(container, imagePath) {
   const paths = {
     desktop: [
       {
-        src: `/img/features/desktop/${imagePath}/image-1.jpg`,
-        src2x: `/img/features/desktop/${imagePath}/image-1@2x.jpg`,
+        src: `../img/features/desktop/${imagePath}/image-1.jpg`,
+        src2x: `../img/features/desktop/${imagePath}/image-1@2x.jpg`,
       },
       {
-        src: `/img/features/desktop/${imagePath}/image-2.jpg`,
-        src2x: `/img/features/desktop/${imagePath}/image-2@2x.jpg`,
+        src: `../img/features/desktop/${imagePath}/image-2.jpg`,
+        src2x: `../img/features/desktop/${imagePath}/image-2@2x.jpg`,
       },
       {
-        src: `/img/features/desktop/${imagePath}/image-3.jpg`,
-        src2x: `/img/features/desktop/${imagePath}/image-3@2x.jpg`,
+        src: `../img/features/desktop/${imagePath}/image-3.jpg`,
+        src2x: `../img/features/desktop/${imagePath}/image-3@2x.jpg`,
       },
     ],
     mobile: [
       {
-        src: `/img/features/mobile/${imagePath}/image-1.jpg`,
-        src2x: `/img/features/mobile/${imagePath}/image-1@2x.jpg`,
+        src: `../img/features/mobile/${imagePath}/image-1.jpg`,
+        src2x: `../img/features/mobile/${imagePath}/image-1@2x.jpg`,
       },
       {
-        src: `/img/features/mobile/${imagePath}/image-2.jpg`,
-        src2x: `/img/features/mobile/${imagePath}/image-2@2x.jpg`,
+        src: `../img/features/mobile/${imagePath}/image-2.jpg`,
+        src2x: `../img/features/mobile/${imagePath}/image-2@2x.jpg`,
       },
       {
-        src: `/img/features/mobile/${imagePath}/image-3.jpg`,
-        src2x: `/img/features/mobile/${imagePath}/image-3@2x.jpg`,
+        src: `../img/features/mobile/${imagePath}/image-3.jpg`,
+        src2x: `../img/features/mobile/${imagePath}/image-3@2x.jpg`,
       },
     ],
   };
