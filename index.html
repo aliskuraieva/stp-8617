@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Robot Blaze Dash Adventure – A high-speed platformer where you dash through worlds, collect power-ups, and defeat enemies!"
+      content="Robot Blaze Dash Adventure - A high-speed platformer where you dash through worlds, collect power-ups, and defeat enemies!"
     />
     <meta
       name="keywords"
@@ -23,13 +23,536 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/stp-8617/commonHelpers2.js"></script>
-    <link rel="stylesheet" href="/stp-8617/assets/styles-a8c85d27.css">
+    <link rel="stylesheet" href="/stp-8617/assets/styles-09ad2a55.css">
   </head>
   <body>
-    <!-- <header>ENOENT: no such file or directory, open '/home/runner/work/stp-8617/stp-8617/src/partials/header.html'</header> -->
+    <header class="header">
+      <div class="header-container container">
+  <a href="./index.html" class="header-logo">
+    <picture>
+      <source
+        srcset="/stp-8617/assets/logo-desk-4cffbce6.png 1x, /stp-8617/assets/logo-desk@2x-76f6f01b.png 2x"
+        type="image/png"
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQ7SURBVHgBlZV7bBRVFMZ/d2a2S7fsdht2aUsKIhQhCOXVGkVJAJVHCEJ5GGI1klhj4uMPYmLUiNFA9B8jSowhGkMMGGMMKZAAkUghIRFrtQhNW5U+sdtut92y2+52uzuzc72zJTSSJoSTmXvPzNz7ne+ee+43AmWHztXNxeKocper28/920k1f9++6upucRvsarLkB/+s4Z08mNzFmBssl0L2SRbMyGAnNLIILF1iZAQjUYNMBoQNWWkyYN/khqs5pnBWGNKUn3UbR/396TPYI9uYrsOsUokPNTqkM9jtxlSupoIIA+ctUqheOo4D6iKQnEdbyTm/MV52VBNCbBsoq8cuthktb8ATkJTpFnmdOtYgpMfVPDXRUndGd4CUo6lL+ZrqhQIXqk/7bjpLX244bcabRAXCSEsKFYWxNhfpuALSsyTm6eQ1D1DafoJo6990f/U5eWNQpMaZEUmqSCBCko7AEioi+HOASZeWi5w1CxG3BNmUYlRikegPsfrlVeRtiZL8Wqc/sI4dFQX8kUhxuvpDaocizA4fQZtvsSlRwOG3jpMDHInOwMrayHRpLtky32L6lZ+pbN6MucOlAuhMq4FHF9cTeVsjdPA7DnzyItY+iT2kghcZuJrHctutOc1Ar5eBSDn+sVVkfBDRkyz6VYGVG4iUPVEY+SpQjyBQDc801WC+qnKpliwDgthBi9c5khuWY5j+ZwVL5qxngWcl43NgTc1GzK0uRNz+f7U5j8WKleIhRlXv1xj52OSL83Ge93lpCJ+aYLhem8vjWjEuXWNp11mK/A2ImD11Cd8uF8fyekw+fbeR6sEQI0kxueRw5SGaFu2ncE6K2hfeQ6xyaoF7muk1OHBhA9cvtmCY1iRgn9emOdFLj5HipO8WWeMeaGIiWaLMpuWKZPabu4hHxycBO6PqmA2uo+tCL+/0qQwZU+NIVcW6yqDeY2Ncsvl9/wKetiz643W0+b6dBDQuzWfl6EautzXRKrOQklMCGt4s3xyuZP2ZtZSL19itjmjLnoV8/+MJji1+Y2KM0+xtnU3QPUp3eyvXvD5EU9+E7ty1L2bCoPaVRrYOu7n6S4jqonIChV2EEzbtITnJcGlnMZsi7YRTSlnKAnReCiI96oPrrtTl29hBwehFnS1pN75QB9qXEYo2WGqVD99hGBtyefxdAx1sr3qO+p9uUFk4j78+0pj5SBi5UO2AEgKhhGL4N533M2uI17zEztRZYkENb6kbu66VZ+UyqJgA/LNnz4y155fV0VJvU7C7jE21w1Qd62PxB09Q1eihV5ic1uLM37GZ7U+t5jHvKJc7h4knwgQ6PVQFpxGfNVOpkjx1R2CNh477PaWXyXMniUUlwaBOQlpKnlKkBx/AFfYzlu2npCJNSqlSQb5gOAKFHh/RnifJ/LstJ7C5gnNAHaF1tJH7t5hidk1kxV7nF/Af9CrOYo6gWAcAAAAASUVORK5CYII= 1x, data:image/png;base64,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 2x"
+        type="image/png"
+        media="(max-width: 1199px)"
+      />
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQ7SURBVHgBlZV7bBRVFMZ/d2a2S7fsdht2aUsKIhQhCOXVGkVJAJVHCEJ5GGI1klhj4uMPYmLUiNFA9B8jSowhGkMMGGMMKZAAkUghIRFrtQhNW5U+sdtut92y2+52uzuzc72zJTSSJoSTmXvPzNz7ne+ee+43AmWHztXNxeKocper28/920k1f9++6upucRvsarLkB/+s4Z08mNzFmBssl0L2SRbMyGAnNLIILF1iZAQjUYNMBoQNWWkyYN/khqs5pnBWGNKUn3UbR/396TPYI9uYrsOsUokPNTqkM9jtxlSupoIIA+ctUqheOo4D6iKQnEdbyTm/MV52VBNCbBsoq8cuthktb8ATkJTpFnmdOtYgpMfVPDXRUndGd4CUo6lL+ZrqhQIXqk/7bjpLX244bcabRAXCSEsKFYWxNhfpuALSsyTm6eQ1D1DafoJo6990f/U5eWNQpMaZEUmqSCBCko7AEioi+HOASZeWi5w1CxG3BNmUYlRikegPsfrlVeRtiZL8Wqc/sI4dFQX8kUhxuvpDaocizA4fQZtvsSlRwOG3jpMDHInOwMrayHRpLtky32L6lZ+pbN6MucOlAuhMq4FHF9cTeVsjdPA7DnzyItY+iT2kghcZuJrHctutOc1Ar5eBSDn+sVVkfBDRkyz6VYGVG4iUPVEY+SpQjyBQDc801WC+qnKpliwDgthBi9c5khuWY5j+ZwVL5qxngWcl43NgTc1GzK0uRNz+f7U5j8WKleIhRlXv1xj52OSL83Ge93lpCJ+aYLhem8vjWjEuXWNp11mK/A2ImD11Cd8uF8fyekw+fbeR6sEQI0kxueRw5SGaFu2ncE6K2hfeQ6xyaoF7muk1OHBhA9cvtmCY1iRgn9emOdFLj5HipO8WWeMeaGIiWaLMpuWKZPabu4hHxycBO6PqmA2uo+tCL+/0qQwZU+NIVcW6yqDeY2Ncsvl9/wKetiz643W0+b6dBDQuzWfl6EautzXRKrOQklMCGt4s3xyuZP2ZtZSL19itjmjLnoV8/+MJji1+Y2KM0+xtnU3QPUp3eyvXvD5EU9+E7ty1L2bCoPaVRrYOu7n6S4jqonIChV2EEzbtITnJcGlnMZsi7YRTSlnKAnReCiI96oPrrtTl29hBwehFnS1pN75QB9qXEYo2WGqVD99hGBtyefxdAx1sr3qO+p9uUFk4j78+0pj5SBi5UO2AEgKhhGL4N533M2uI17zEztRZYkENb6kbu66VZ+UyqJgA/LNnz4y155fV0VJvU7C7jE21w1Qd62PxB09Q1eihV5ic1uLM37GZ7U+t5jHvKJc7h4knwgQ6PVQFpxGfNVOpkjx1R2CNh477PaWXyXMniUUlwaBOQlpKnlKkBx/AFfYzlu2npCJNSqlSQb5gOAKFHh/RnifJ/LstJ7C5gnNAHaF1tJH7t5hidk1kxV7nF/Af9CrOYo6gWAcAAAAASUVORK5CYII=" alt="Logo image" />
+    </picture>
+  </a>
+
+  <button type="button" class="header-open-btn" aria-label="open menu">
+    <svg width="20" height="20">
+      <use href="/stp-8617/assets/sprite-ba06efd6.svg#icon-burger-menu"></use>
+    </svg>
+  </button>
+
+  <div class="header-backdrop"></div>
+
+  <nav class="header-mob-menu">
+    <div class="header-menu-top">
+      <picture class="header-menu-logo">
+        <source
+          srcset="data:image/png;base64,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 1x, /stp-8617/assets/logo-mob-menu@2x-9002cdf1.png 2x"
+          type="image/png"
+          media="(max-width: 1199px)"
+        />
+        <img src="data:image/png;base64,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" alt="Logo image" />
+      </picture>
+
+      <button type="button" class="header-close-btn" aria-label="close menu">
+        <svg width="20" height="20">
+          <use href="/stp-8617/assets/sprite-ba06efd6.svg#icon-close-btn"></use>
+        </svg>
+      </button>
+    </div>
+
+    <ul class="header-list">
+      <li class="header-item">
+        <a href="#hero-id" class="header-link">Home</a>
+      </li>
+      <li class="header-item">
+        <a href="#review-id" class="header-link">Game Review</a>
+      </li>
+      <li class="header-item">
+        <a href="#features-id" class="header-link">Features & Power-ups</a>
+      </li>
+      <li class="header-item">
+        <a href="#squad-id" class="header-link">Meet the Blaze Squad</a>
+      </li>
+      <li class="header-item">
+        <a href="#leaderboards-id" class="header-link"
+          >Competitive Leaderboards</a
+        >
+      </li>
+      <li class="header-item">
+        <a href="#challenges-id" class="header-link"
+          >Game levels and challenges</a
+        >
+      </li>
+      <li class="header-item">
+        <a href="#community-id" class="header-link"
+          >Community and social functions</a
+        >
+      </li>
+    </ul>
+  </nav>
+
+  <nav class="header-desk-nav">
+    <ul class="header-list">
+      <li class="header-item">
+        <a href="#hero-id" class="header-link">Home</a>
+      </li>
+      <li class="header-item">
+        <a href="#features-id" class="header-link">Features & Power-ups</a>
+      </li>
+      <li class="header-item">
+        <a href="#leaderboards-id" class="header-link"
+          >Competitive Leaderboards</a
+        >
+      </li>
+      <li class="header-item">
+        <a href="#challenges-id" class="header-link"
+          >Game levels and challenges</a
+        >
+      </li>
+      <li class="header-item">
+        <a href="#review-id" class="header-link">Game Review</a>
+      </li>
+      <li class="header-item">
+        <a href="#squad-id" class="header-link">Meet the Blaze Squad</a>
+      </li>
+      <li class="header-item">
+        <a href="#community-id" class="header-link"
+          >Community and social functions</a
+        >
+      </li>
+    </ul>
+  </nav>
+</div>
+
+    </header>
 
     <main>
-      <!-- ENOENT: no such file or directory, open '/home/runner/work/stp-8617/stp-8617/src/partials/hero.html' -->
+      <section id="hero-id">
+  <div class="hero-container container">
+    <div class="hero-image-container">
+      <picture>
+        <source
+          srcset="/stp-8617/assets/image-61ece3d8.png 1x, /stp-8617/assets/image@2x-c746dae3.png 2x"
+          type="image/png"
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="/stp-8617/assets/image-66229a57.png 1x, /stp-8617/assets/image@2x-481628e6.png 2x"
+          type="image/png"
+          media="(max-width: 1199px)"
+        />
+        <img src="/stp-8617/assets/image-66229a57.png" alt="Hero image" />
+      </picture>
+    </div>
+
+    <div class="hero-content">
+      <h1 class="hero-title">The Adventures of Blaze the Robot Dash</h1>
+
+      <a
+        href="https://play.google.com/store/apps/details?id=com.superrobotblazee.adventure&hl=en&gl=us"
+        target="_blank"
+        class="hero-button"
+      >
+        <svg width="24" height="24">
+          <use href="/stp-8617/assets/sprite-ba06efd6.svg#icon-google-logo"></use>
+        </svg>
+        <span>Google Play</span>
+      </a>
+      <p class="hero-text">
+        Robots are waiting for you: join an exciting journey to another world
+      </p>
+    </div>
+  </div>
+</section>
+
+      <section id="review-id">
+  <div class="review-container container">
+    <h2 class="review-title">Game Review</h2>
+    <div class="review-card-container">
+      <ul class="review-card-list">
+        <li class="review-card-item">
+          <picture>
+            <source
+              srcset="/stp-8617/assets/image-1-1a8ce3ba.jpg 1x, /stp-8617/assets/image-1@2x-e5b0d878.jpg 2x"
+              type="image/jpg"
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="/stp-8617/assets/image-1-a223b846.jpg 1x, /stp-8617/assets/image-1@2x-921f8154.jpg 2x"
+              type="image/jpg"
+              media="(max-width: 1199px)"
+            />
+            <img
+              src="/stp-8617/assets/image-1-a223b846.jpg"
+              alt="Review card"
+              class="review-card-image"
+            />
+          </picture>
+          <p class="review-card-text">
+            Join Robot Blaze Dash Adventure, an exciting running game where you
+            race through different worlds, overcome obstacles and fight enemies
+            while collecting power-ups!
+          </p>
+        </li>
+        <li class="review-card-item">
+          <picture>
+            <source
+              srcset="/stp-8617/assets/image-2-e5c4a414.jpg 1x, /stp-8617/assets/image-2@2x-9ab549cf.jpg 2x"
+              type="image/jpg"
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="/stp-8617/assets/image-2-a9db7917.jpg 1x, /stp-8617/assets/image-2@2x-65c99ef7.jpg 2x"
+              type="image/jpg"
+              media="(max-width: 1199px)"
+            />
+            <img
+              src="/stp-8617/assets/image-2-a9db7917.jpg"
+              alt="Review card"
+              class="review-card-image"
+            />
+          </picture>
+          <p class="review-card-text">
+            Dynamic action with exciting challenges on the platform. Collect
+            time bonuses to increase your score.
+          </p>
+        </li>
+        <li class="review-card-item">
+          <picture>
+            <source
+              srcset="/stp-8617/assets/image-3-2ecc31c1.jpg 1x, /stp-8617/assets/image-3@2x-e2931a98.jpg 2x"
+              type="image/jpg"
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="/stp-8617/assets/image-3-44b3dcc5.jpg 1x, /stp-8617/assets/image-3@2x-39bb5950.jpg 2x"
+              type="image/jpg"
+              media="(max-width: 1199px)"
+            />
+            <img
+              src="/stp-8617/assets/image-3-44b3dcc5.jpg"
+              alt="Review card"
+              class="review-card-image"
+            />
+          </picture>
+          <p class="review-card-text">
+            Dodge, jump and shoot to overcome dangerous enemies. Simple controls
+            - run, jump and clear obstacles!
+          </p>
+        </li>
+        <li class="review-card-item">
+          <picture>
+            <source
+              srcset="/stp-8617/assets/image-4-f56600fd.jpg 1x, /stp-8617/assets/image-4@2x-00c597cb.jpg 2x"
+              type="image/jpg"
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="/stp-8617/assets/image-4-aed36916.jpg 1x, /stp-8617/assets/image-4@2x-09397c3d.jpg 2x"
+              type="image/jpg"
+              media="(max-width: 1199px)"
+            />
+            <img
+              src="/stp-8617/assets/image-4-aed36916.jpg"
+              alt="Review card"
+              class="review-card-image"
+            />
+          </picture>
+          <p class="review-card-text">
+            No pay-to-win mechanics - enjoy free gameplay!
+          </p>
+        </li>
+      </ul>
+      <p class="review-description">
+        Join Robot Blaze Dash Adventure, an exciting running game where you race
+        through different worlds, overcome obstacles and fight enemies while
+        collecting power-ups! Dynamic action with exciting challenges on the
+        platform. Collect time bonuses to increase your score. Dodge, jump and
+        shoot to overcome dangerous enemies. Simple controls - run, jump and
+        clear obstacles! No pay-to-win mechanics - enjoy free gameplay!
+      </p>
+    </div>
+  </div>
+</section>
+
+      <section id="features-id">
+  <div class="features-container container">
+    <div class="features-header">
+      <h2 class="features-title">Features & Power-ups</h2>
+      <p class="features-text">
+        Master special abilities and power-ups that will help you conquer each
+        level
+      </p>
+    </div>
+
+    <ul class="features-card-list">
+      <!-- -------------------- card-1 -------------------- -->
+
+      <li class="features-card-item">
+        <div class="features-card-header">
+          <h3 class="features-card-title">Time Acceleration:</h3>
+          <p class="features-text">
+            Extra seconds to complete challenging stages.
+          </p>
+        </div>
+        <div class="features-card-content">
+          <div class="feature-image-box-horizon">
+            <div class="feature-image-frame feature-image-frame-right">
+              <picture>
+                <source
+                  srcset="/stp-8617/assets/image-1-b1a93720.jpg 1x, /stp-8617/assets/image-1@2x-1f99c77a.jpg 2x"
+                  type="image/jpg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="/stp-8617/assets/image-1-b8ec1d84.jpg 1x, /stp-8617/assets/image-1@2x-07694669.jpg 2x"
+                  type="image/jpg"
+                  media="(max-width: 1199px)"
+                />
+                <img
+                  src="/stp-8617/assets/image-1-b8ec1d84.jpg"
+                  alt="Review card"
+                  class="feature-image feature-image-right"
+                />
+              </picture>
+            </div>
+          </div>
+
+          <div class="features-card-description">
+            <p class="features-text">
+              Games where you need to quickly solve puzzles against time often
+              use power-ups to slow down or speed up time.
+            </p>
+          </div>
+        </div>
+      </li>
+
+      <!-- -------------------- card-2 -------------------- -->
+
+      <li class="features-card-item">
+        <div class="features-card-header">
+          <h3 class="features-card-title">Shield Mode:</h3>
+          <p class="features-text">
+            Temporary invincibility against obstacles.
+          </p>
+        </div>
+        <div class="features-card-content">
+          <div class="feature-image-box-horizon">
+            <div class="feature-image-frame feature-image-frame-left">
+              <div class="image-rotator feature-image" data-id="card-2">
+                <img src="" srcset="" alt="Rotating image" />
+              </div>
+            </div>
+          </div>
+
+          <div class="features-card-description">
+            <p class="features-text">
+              The game is characterized by a fast pace and requires players to
+              react quickly and think strategically. <br />To overcome
+              especially difficult moments, players can use the "Shield" mode -
+              a temporary bonus that makes them invulnerable.
+            </p>
+          </div>
+        </div>
+      </li>
+
+      <!-- -------------------- card-3 -------------------- -->
+
+      <li class="features-card-item">
+        <div class="features-card-header">
+          <h3 class="features-card-title">Super Jump:</h3>
+          <p class="features-text">Double-tap for a higher leap over gaps..</p>
+        </div>
+        <div class="features-card-preview features-only-mobil">
+          <p class="features-text">
+            Double tap for more jump through gaps. Rapid Fire - Punch enemies
+            with updated attacks!
+          </p>
+        </div>
+        <div class="features-card-content">
+          <div class="feature-image-box-vertical">
+            <div class="feature-image-frame">
+              <div class="image-rotator" data-id="card-3">
+                <img src="" srcset="" alt="Rotating image" />
+              </div>
+            </div>
+          </div>
+
+          <div class="features-card-description">
+            <p class="features-text features-only-desktop">
+              Double tap for more jump through gaps. Rapid Fire - Punch enemies
+              with updated attacks!
+            </p>
+            <p class="features-text">
+              Double Tap: To activate the Super Jump, the player must quickly
+              press the jump button twice
+            </p>
+            <p class="features-text">
+              Increased Distance/Height: Once activated, the character jumps to
+              a significantly greater distance or height, allowing them to
+              overcome wide gaps, high obstacles, or reach hard-to-reach places.
+            </p>
+          </div>
+        </div>
+      </li>
+
+      <!-- -------------------- card-4 -------------------- -->
+
+      <li class="features-card-item">
+        <div class="features-card-header">
+          <h3 class="features-card-title">Rapid Fire:</h3>
+          <p class="features-text">Punch enemies with updated attacks!</p>
+        </div>
+        <div class="features-card-preview features-only-mobil">
+          <p class="features-text">
+            "Rapid Fire" is a game mechanic that allows the player to shoot at
+            extremely high speeds, often with upgraded or modified attacks.
+          </p>
+        </div>
+        <div class="features-card-content">
+          <div class="feature-image-box-vertical">
+            <div class="feature-image-frame">
+              <div class="image-rotator" data-id="card-4">
+                <img src="" srcset="" alt="Rotating image" />
+              </div>
+            </div>
+          </div>
+
+          <div class="features-card-description">
+            <p class="features-text">
+              <span class="features-only-desktop">
+                "Rapid Fire" is a game mechanic that allows the player to shoot
+                at extremely high speeds, often with upgraded or modified
+                attacks.
+              </span>
+              How it works: <br />
+              High rate of fire: The player can fire a large number of
+              projectiles in a short amount of time, dealing significant damage
+              to enemies. <br />
+              Updated attacks: "Rapid Fire" is often accompanied by weapon
+              upgrades
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <p class="features-text-end">
+      Use these abilities wisely to race through every world!
+    </p>
+  </div>
+</section>
+
+      <section id="squad-id">
+  <div class="squad-container container">
+    <h2 class="squad-title">Meet the Blaze Squad</h2>
+    <p class="squad-description">
+      Join Blaze and his robot allies and embark on a daring adventure
+    </p>
+    <ul class="squad-card-list">
+      <!-- -------------------- card-1 -------------------- -->
+
+      <li class="squad-card-item">
+        <div class="squad-card-image-box">
+          <picture>
+            <source
+              srcset="/stp-8617/assets/image-1-c7cb4693.png 1x, /stp-8617/assets/image-1@2x-a5249dfc.png 2x"
+              type="image/png"
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="/stp-8617/assets/image-1-08963915.png 1x, /stp-8617/assets/image-1@2x-d27e8713.png 2x"
+              type="image/png"
+              media="(max-width: 1199px)"
+            />
+            <img src="/stp-8617/assets/image-1-08963915.png" alt="Card image" />
+          </picture>
+        </div>
+        <p class="squad-card-text">
+          Blaze is a fearless runner with unparalleled speed
+        </p>
+      </li>
+
+      <!-- -------------------- card-2 -------------------- -->
+
+      <li class="squad-card-item">
+        <div class="squad-card-image-box">
+          <picture>
+            <source
+              srcset="/stp-8617/assets/image-2-f60b4c3a.png 1x, /stp-8617/assets/image-2@2x-fd659410.png 2x"
+              type="image/png"
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="/stp-8617/assets/image-2-3d509937.png 1x, /stp-8617/assets/image-2@2x-6297f885.png 2x"
+              type="image/png"
+              media="(max-width: 1199px)"
+            />
+            <img src="/stp-8617/assets/image-2-3d509937.png" alt="Card image" />
+          </picture>
+        </div>
+        <p class="squad-card-text">Energy-powered volt warrior</p>
+      </li>
+
+      <!-- -------------------- card-3 -------------------- -->
+
+      <li class="squad-card-item">
+        <div class="squad-card-image-box">
+          <picture>
+            <source
+              srcset="/stp-8617/assets/image-3-736c9883.png 1x, /stp-8617/assets/image-3@2x-66a069d2.png 2x"
+              type="image/png"
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="/stp-8617/assets/image-3-931f1aa7.png 1x, /stp-8617/assets/image-3@2x-9775a373.png 2x"
+              type="image/png"
+              media="(max-width: 1199px)"
+            />
+            <img src="/stp-8617/assets/image-3-931f1aa7.png" alt="Card image" />
+          </picture>
+        </div>
+        <p class="squad-card-text">
+          Gearbot is a mechanical genius with powerful weapons
+        </p>
+      </li>
+
+      <!-- -------------------- card-4 -------------------- -->
+
+      <li class="squad-card-item">
+        <div class="squad-card-image-box">
+          <picture>
+            <source
+              srcset="/stp-8617/assets/image-4-a293b125.png 1x, /stp-8617/assets/image-4@2x-217562f3.png 2x"
+              type="image/png"
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="/stp-8617/assets/image-4-4f197cb8.png 1x, /stp-8617/assets/image-4@2x-8eafce58.png 2x"
+              type="image/png"
+              media="(max-width: 1199px)"
+            />
+            <img src="/stp-8617/assets/image-4-4f197cb8.png" alt="Card image" />
+          </picture>
+        </div>
+        <p class="squad-card-text">
+          Terra Sentinel with an impenetrable shield.
+        </p>
+      </li>
+    </ul>
+    <p class="squad-text-end">Choose your hero and rush into battle!</p>
+  </div>
+</section>
+
       <div class="lb-container">
   <h2 class="lb-title" id="lb-id">Competitive Leaderboards</h2>
   <div class="lb-mobile-only">
@@ -512,7 +1035,6 @@
 </div>
 
     </main>
-
     <footer><footer class="footer" id="footer">
   <div class="footer-container">
     <div class="footer-nav">
