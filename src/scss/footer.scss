@@ -19,6 +19,7 @@
   text-align: center;
   font-size: 16px;
 }
+
 @include media(mobile) {
   .footer-span-desk {
     display: none;
@@ -51,5 +52,6 @@
     font-size: 32px;
     line-height: 125%;
     margin-left: 10px;
+    display: inline;
   }
 }
