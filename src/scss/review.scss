@@ -3,7 +3,6 @@
 }
 
 .review-title {
-  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 24px;
   color: $_color_teal;
@@ -25,7 +24,6 @@
 }
 
 .review-card-text {
-  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: $_color_light;
@@ -42,7 +40,7 @@
 
   .review-title {
     font-size: 48px;
-    color: #e5e7eb;
+    color: $_color_teal;
     text-align: start;
     margin-bottom: 70px;
     line-height: 48px;
@@ -73,7 +71,6 @@
     top: 378px;
     right: 50%;
     transform: translateX(50%);
-    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 18px;
     color: $_color_light;

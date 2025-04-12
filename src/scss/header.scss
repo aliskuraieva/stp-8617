@@ -126,7 +126,6 @@
 }
 
 .header-item {
-  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 18px;
   color: $_color_light;
@@ -180,7 +179,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    column-gap: 78px;
+    column-gap: 70px;
     row-gap: 8px;
   }
 
