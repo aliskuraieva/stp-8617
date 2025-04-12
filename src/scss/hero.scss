@@ -28,7 +28,6 @@
 }
 
 .hero-title {
-  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 32px;
   color: $_color_light;
@@ -39,7 +38,6 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 24px;
   color: #1e1e1e;
@@ -48,7 +46,7 @@
   border: 2px solid $_color_light;
   padding: 18px 36px;
   box-sizing: border-box;
-  transition: all 250ms ease-in;
+  transition: all 150ms ease-in;
   &:hover {
     border-color: $_color_gray;
     box-shadow: 0 0 2px 0 #fff6db, 0 0 6px 0 #fffdf5,
@@ -57,7 +55,6 @@
 }
 
 .hero-text {
-  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 20px;
   color: $_color_light;

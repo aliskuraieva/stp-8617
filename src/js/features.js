@@ -1,3 +1,8 @@
+const images = import.meta.glob('../img/features/**/*.{jpg,png}', {
+  eager: true,
+  import: 'default',
+});
+
 function createRotator(container, imagePath) {
   const img = container.querySelector('img');
   const isDesktop = () => window.innerWidth >= 1200;
@@ -5,35 +10,22 @@ function createRotator(container, imagePath) {
   let index = 0;
   let intervalId = null;
 
+  function resolvePath(group, num, is2x = false) {
+    const base = `../img/features/${group}/${imagePath}/image-${num}${
+      is2x ? '@2x' : ''
+    }.jpg`;
+    return images[base];
+  }
+
   const paths = {
-    desktop: [
-      {
-        src: `../img/features/desktop/${imagePath}/image-1.jpg`,
-        src2x: `../img/features/desktop/${imagePath}/image-1@2x.jpg`,
-      },
-      {
-        src: `../img/features/desktop/${imagePath}/image-2.jpg`,
-        src2x: `../img/features/desktop/${imagePath}/image-2@2x.jpg`,
-      },
-      {
-        src: `../img/features/desktop/${imagePath}/image-3.jpg`,
-        src2x: `../img/features/desktop/${imagePath}/image-3@2x.jpg`,
-      },
-    ],
-    mobile: [
-      {
-        src: `../img/features/mobile/${imagePath}/image-1.jpg`,
-        src2x: `../img/features/mobile/${imagePath}/image-1@2x.jpg`,
-      },
-      {
-        src: `../img/features/mobile/${imagePath}/image-2.jpg`,
-        src2x: `../img/features/mobile/${imagePath}/image-2@2x.jpg`,
-      },
-      {
-        src: `../img/features/mobile/${imagePath}/image-3.jpg`,
-        src2x: `../img/features/mobile/${imagePath}/image-3@2x.jpg`,
-      },
-    ],
+    desktop: [1, 2, 3].map(i => ({
+      src: resolvePath('desktop', i),
+      src2x: resolvePath('desktop', i, true),
+    })),
+    mobile: [1, 2, 3].map(i => ({
+      src: resolvePath('mobile', i),
+      src2x: resolvePath('mobile', i, true),
+    })),
   };
 
   function setImage(i) {
