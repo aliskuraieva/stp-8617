@@ -1,0 +1,109 @@
+<div class="header-container container">
+  <a href="./index.html" class="header-logo">
+    <picture>
+      <source
+        srcset="/img/header/logo-desk.png 1x, /img/header/logo-desk@2x.png 2x"
+        type="image/png"
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="/img/header/logo-mob.png 1x, /img/header/logo-mob@2x.png 2x"
+        type="image/png"
+        media="(max-width: 1199px)"
+      />
+      <img src="/img/header/logo-mob.png" alt="Logo image" />
+    </picture>
+  </a>
+
+  <button type="button" class="header-open-btn" aria-label="open menu">
+    <svg width="20" height="20">
+      <use href="/img/sprite.svg#icon-burger-menu"></use>
+    </svg>
+  </button>
+
+  <div class="header-backdrop"></div>
+
+  <nav class="header-mob-menu">
+    <div class="header-menu-top">
+      <picture class="header-menu-logo">
+        <source
+          srcset="
+            /img/header/logo-mob-menu.png    1x,
+            /img/header/logo-mob-menu@2x.png 2x
+          "
+          type="image/png"
+          media="(max-width: 1199px)"
+        />
+        <img src="/img/header/logo-mob-menu.png" alt="Logo image" />
+      </picture>
+
+      <button type="button" class="header-close-btn" aria-label="close menu">
+        <svg width="20" height="20">
+          <use href="/img/sprite.svg#icon-close-btn"></use>
+        </svg>
+      </button>
+    </div>
+
+    <ul class="header-list">
+      <li class="header-item">
+        <a href="#hero-id" class="header-link">Home</a>
+      </li>
+      <li class="header-item">
+        <a href="#review-id" class="header-link">Game Review</a>
+      </li>
+      <li class="header-item">
+        <a href="#features-id" class="header-link">Features & Power-ups</a>
+      </li>
+      <li class="header-item">
+        <a href="#squad-id" class="header-link">Meet the Blaze Squad</a>
+      </li>
+      <li class="header-item">
+        <a href="#leaderboards-id" class="header-link"
+          >Competitive Leaderboards</a
+        >
+      </li>
+      <li class="header-item">
+        <a href="#challenges-id" class="header-link"
+          >Game levels and challenges</a
+        >
+      </li>
+      <li class="header-item">
+        <a href="#community-id" class="header-link"
+          >Community and social functions</a
+        >
+      </li>
+    </ul>
+  </nav>
+
+  <nav class="header-desk-nav">
+    <ul class="header-list">
+      <li class="header-item">
+        <a href="#hero-id" class="header-link">Home</a>
+      </li>
+      <li class="header-item">
+        <a href="#features-id" class="header-link">Features & Power-ups</a>
+      </li>
+      <li class="header-item">
+        <a href="#leaderboards-id" class="header-link"
+          >Competitive Leaderboards</a
+        >
+      </li>
+      <li class="header-item">
+        <a href="#challenges-id" class="header-link"
+          >Game levels and challenges</a
+        >
+      </li>
+      <li class="header-item">
+        <a href="#review-id" class="header-link">Game Review</a>
+      </li>
+      <li class="header-item">
+        <a href="#squad-id" class="header-link">Meet the Blaze Squad</a>
+      </li>
+      <li class="header-item">
+        <a href="#community-id" class="header-link"
+          >Community and social functions</a
+        >
+      </li>
+    </ul>
+  </nav>
+</div>

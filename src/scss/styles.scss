@@ -1,11 +1,4 @@
-@import './leaderboards.scss';
-@import './game-levels.scss';
-@import './community.scss';
-@import './footer.scss';
-@import './privacy-policy.scss';
-@import './cookies.scss';
-@import './cookies-pop.scss';
-@import './terms-and-conditions.scss';
+@import './common/breakpoints';
 
 :root {
   font-family: 'Lora', serif;
@@ -13,11 +6,9 @@
   line-height: 24px;
   font-weight: 400;
 
-  scroll-behavior: smooth;
-
   background-color: #0b2158;
   color: #f8fafc;
-
+  scrollbar-gutter: stable;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -25,12 +16,16 @@
   -webkit-text-size-adjust: 100%;
 }
 
-// .container {
-//   background-color: $_color_blue;
-//   width: $mobile;
-//   margin-left: auto;
-//   margin-right: auto;
-//   @include media(desktop) {
-//     width: $desktop;
-//   }
-// }
+.container {
+  background-color: $_color_blue;
+  width: $mobile;
+  margin-left: auto;
+  margin-right: auto;
+  @include media(desktop) {
+    width: $desktop;
+  }
+
+  body {
+    position: relative;
+  }
+}
