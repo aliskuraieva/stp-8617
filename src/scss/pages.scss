@@ -1,4 +1,4 @@
-.terms-container {
+.page-container {
   padding: 0 16px 50px 16px;
   position: relative;
 }
@@ -32,7 +32,7 @@
   }
 }
 
-.terms-content {
+.page-content {
   color: $_color_light;
   h2 {
     font-weight: 400;
@@ -59,22 +59,31 @@
   ul {
     margin-bottom: 20px;
   }
+
   li {
     list-style: outside;
     margin-left: 24px;
     font-size: 18px;
-    text-decoration: underline;
+  }
+
+  a {
+    font-size: 18px;
     transition: all 250ms ease-in;
+    text-decoration: underline;
+    word-break: break-all;
     &:hover {
       color: $_color_light;
       text-shadow: 0 0 6px $_color_light, 0 0 12px $_color_light,
         0 0 18px $_color_light;
     }
   }
+  .link-style {
+    color: #007aff;
+  }
 }
 
 @include media(desktop) {
-  .terms-container {
+  .page-container {
     padding: 0 40px 60px 40px;
   }
 
@@ -83,7 +92,7 @@
     margin-bottom: 20px;
   }
 
-  .terms-content {
+  .page-content {
     color: $_color_light;
     h2 {
       font-size: 32px;
@@ -99,6 +108,10 @@
 
     li {
       margin-left: 30px;
+      font-size: 20px;
+    }
+
+    a {
       font-size: 20px;
     }
   }
