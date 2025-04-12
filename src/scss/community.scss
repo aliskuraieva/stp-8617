@@ -1,0 +1,391 @@
+.community-container {
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 16px;
+}
+
+.community-title {
+  font-size: 20px;
+  color: #95b9b4;
+  margin-bottom: 12px;
+}
+
+.community-text {
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+.community-intro {
+  font-size: 14px;
+}
+
+.community-social-wrapper {
+  margin-bottom: 80px;
+}
+
+.community-list-mobile {
+  display: flex;
+  flex-direction: column;
+}
+
+.community-row-mobile {
+  display: flex;
+  justify-content: space-between;
+}
+
+.community-item-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.community-item-img-mobile {
+  width: 116px;
+  height: 88px;
+  background-size: cover;
+  margin-bottom: 8px;
+}
+
+.community-item-text-mobile {
+  text-align: left;
+  font-size: 14px;
+}
+
+.community-descr-mobile {
+  font-size: 16px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.community-title-mobile {
+  margin-top: 80px;
+  margin-bottom: 50px;
+  font-size: 20px;
+  color: #95b9b4;
+}
+
+@include media(mobile) {
+  .community-desktop-only {
+    display: none;
+  }
+
+  .community-item-mobile.football .community-item-img-mobile {
+    background-image: url('../img/community/football-tournament-mob.png');
+  }
+
+  .community-item-mobile.conundrum .community-item-img-mobile {
+    background-image: url('../img/community/conundrum-mob.png');
+  }
+
+  .community-item-mobile.labyrinth .community-item-img-mobile {
+    background-image: url('../img/community/labyrinth-mob.png');
+  }
+
+  .community-item-mobile.tennis .community-item-img-mobile {
+    background-image: url('../img/community/tennis-mob.png');
+  }
+
+  .community-item-mobile.knight .community-item-img-mobile {
+    background-image: url('../img/community/knights-tournament-mob.png');
+  }
+
+  .community-item-mobile.pilot .community-item-img-mobile {
+    background-image: url('../img/community/pilot-icon-mob.png');
+  }
+
+  .community-item-mobile.pathfinder .community-item-img-mobile {
+    background-image: url('../img/community/pathfinder-icon-mob.png');
+  }
+
+  .community-item-mobile.catacombs .community-item-img-mobile {
+    background-image: url('../img/community/catacombs-passage-mob.png');
+  }
+
+  .community-item-mobile.hero .community-item-img-mobile {
+    background-image: url('../img/community/super-hero-mob.png');
+  }
+
+  .community-item-mobile.chapter .community-item-img-mobile {
+    background-image: url('../img/community/chapter-completed-mob.png');
+  }
+
+  .community-item-mobile.planet .community-item-img-mobile {
+    background-image: url('../img/community/planet-of-robots-mob.png');
+  }
+
+  .community-item-mobile.robot .community-item-img-mobile {
+    background-image: url('../img/community/robot-wars-mob.png');
+  }
+
+  .community-item-mobile.paradise .community-item-img-mobile {
+    background-image: url('../img/community/birds-paradise-mob.png');
+  }
+
+  .community-item-mobile.adventures .community-item-img-mobile {
+    background-image: url('../img/community/donnies-adventures-mob.png');
+  }
+
+  .community-item-mobile.king .community-item-img-mobile {
+    background-image: url('../img/community/the-lion-king-mob.png');
+  }
+
+  @media (min-resolution: 2dppx) {
+    .community-item-mobile.football .community-item-img-mobile {
+      background-image: url('../img/community/football-tournament-mob@2x.png');
+    }
+
+    .community-item-mobile.conundrum .community-item-img-mobile {
+      background-image: url('../img/community/conundrum-mob@2x.png');
+    }
+
+    .community-item-mobile.labyrinth .community-item-img-mobile {
+      background-image: url('../img/community/labyrinth-mob@2x.png');
+    }
+
+    .community-item-mobile.tennis .community-item-img-mobile {
+      background-image: url('../img/community/tennis-mob@2x.png');
+    }
+
+    .community-item-mobile.knight .community-item-img-mobile {
+      background-image: url('../img/community/knights-tournament-mob@2x.png');
+    }
+
+    .community-item-mobile.pilot .community-item-img-mobile {
+      background-image: url('../img/community/pilot-icon-mob@2x.png');
+    }
+
+    .community-item-mobile.pathfinder .community-item-img-mobile {
+      background-image: url('../img/community/pathfinder-icon-mob@2x.png');
+    }
+
+    .community-item-mobile.catacombs .community-item-img-mobile {
+      background-image: url('../img/community/catacombs-passage-mob@2x.png');
+    }
+
+    .community-item-mobile.hero .community-item-img-mobile {
+      background-image: url('../img/community/super-hero-mob@2x.png');
+    }
+
+    .community-item-mobile.chapter .community-item-img-mobile {
+      background-image: url('../img/community/chapter-completed-mob@2x.png');
+    }
+
+    .community-item-mobile.planet .community-item-img-mobile {
+      background-image: url('../img/community/planet-of-robots-mob@2x.png');
+    }
+
+    .community-item-mobile.robot .community-item-img-mobile {
+      background-image: url('../img/community/robot-wars-mob@2x.png');
+    }
+
+    .community-item-mobile.paradise .community-item-img-mobile {
+      background-image: url('../img/community/birds-paradise-mob@2x.png');
+    }
+
+    .community-item-mobile.adventures .community-item-img-mobile {
+      background-image: url('../img/community/donnies-adventures-mob@2x.png');
+    }
+
+    .community-item-mobile.king .community-item-img-mobile {
+      background-image: url('../img/community/the-lion-king-mob@2x.png');
+    }
+  }
+}
+
+@include media(desktop) {
+  .community-mobile-only {
+    display: none;
+  }
+
+  .community-desktop-only {
+    display: block;
+  }
+
+  .community-container {
+    max-width: 1200px;
+    padding: 0 40px;
+  }
+
+  .community-title {
+    font-size: 36px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .community-text {
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 70px;
+  }
+
+  .community-descr-desktop {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+
+  .community-title-desktop {
+    font-size: 32px;
+    margin-bottom: 50px;
+    color: #95b9b4;
+  }
+
+  .community-list-desk {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .community-list-desk {
+    margin-bottom: 70px;
+  }
+
+  .community-item-desk {
+    text-align: center;
+  }
+
+  .community-item-img-desk {
+    width: 180px;
+    height: 176px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 12px;
+  }
+
+  .community-social-desk {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .community-span-desk {
+    font-size: 32px;
+    color: #95b9b4;
+  }
+
+  .community-social-wrapper {
+    margin-bottom: 125px;
+  }
+
+  .community-item-img-desk.football {
+    background-image: url('../img/community/football-tournament-desk.png');
+  }
+
+  .community-item-img-desk.conundrum {
+    background-image: url('../img/community/conundrum-desk.png');
+  }
+
+  .community-item-img-desk.labyrinth {
+    background-image: url('../img/community/labyrinth-desk.png');
+  }
+
+  .community-item-img-desk.tennis {
+    background-image: url('../img/community/tennis-desk.png');
+  }
+
+  .community-item-img-desk.knight {
+    background-image: url('../img/community/knights-tournament-desk.png');
+  }
+
+  .community-item-img-desk.pilot {
+    background-image: url('../img/community/pilot-icon-desk.png');
+  }
+
+  .community-item-img-desk.pathfinder {
+    background-image: url('../img/community/pathfinder-icon-desk.png');
+  }
+
+  .community-item-img-desk.catacombs {
+    background-image: url('../img/community/catacombs-passage-desk.png');
+  }
+
+  .community-item-img-desk.hero {
+    background-image: url('../img/community/super-hero-desk.png');
+  }
+
+  .community-item-img-desk.chapter {
+    background-image: url('../img/community/chapter-completed-desk.png');
+  }
+
+  .community-item-img-desk.planet {
+    background-image: url('../img/community/planet-of-robots-desk.png');
+  }
+
+  .community-item-img-desk.robot {
+    background-image: url('../img/community/robot-wars-desk.png');
+  }
+
+  .community-item-img-desk.paradise {
+    background-image: url('../img/community/birds-paradise-desk.png');
+  }
+
+  .community-item-img-desk.adventures {
+    background-image: url('../img/community/donnies-adventures-desk.png');
+  }
+
+  .community-item-img-desk.king {
+    background-image: url('../img/community/the-lion-king-desk.png');
+  }
+
+  @media (min-resolution: 2dppx) {
+    .community-item-img-desk.football {
+      background-image: url('../img/community/football-tournament-desk@2x.png');
+    }
+
+    .community-item-img-desk.conundrum {
+      background-image: url('../img/community/conundrum-desk@2x.png');
+    }
+
+    .community-item-img-desk.labyrinth {
+      background-image: url('../img/community/labyrinth-desk@2x.png');
+    }
+
+    .community-item-img-desk.tennis {
+      background-image: url('../img/community/tennis-desk@2x.png');
+    }
+
+    .community-item-img-desk.knight {
+      background-image: url('../img/community/knights-tournament-desk@2x.png');
+    }
+
+    .community-item-img-desk.pilot {
+      background-image: url('../img/community/pilot-icon-desk@2x.png');
+    }
+
+    .community-item-img-desk.pathfinder {
+      background-image: url('../img/community/pathfinder-icon-desk@2x.png');
+    }
+
+    .community-item-img-desk.catacombs {
+      background-image: url('../img/community/catacombs-passage-desk@2x.png');
+    }
+
+    .community-item-img-desk.hero {
+      background-image: url('../img/community/super-hero-desk@2x.png');
+    }
+
+    .community-item-img-desk.chapter {
+      background-image: url('../img/community/chapter-completed-desk@2x.png');
+    }
+
+    .community-item-img-desk.planet {
+      background-image: url('../img/community/planet-of-robots-desk@2x.png');
+    }
+
+    .community-item-img-desk.robot {
+      background-image: url('../img/community/robot-wars-desk@2x.png');
+    }
+
+    .community-item-img-desk.paradise {
+      background-image: url('../img/community/birds-paradise-desk@2x.png');
+    }
+
+    .community-item-img-desk.adventures {
+      background-image: url('../img/community/donnies-adventures-desk@2x.png');
+    }
+
+    .community-item-img-desk.king {
+      background-image: url('../img/community/the-lion-king-desk@2x.png');
+    }
+  }
+}

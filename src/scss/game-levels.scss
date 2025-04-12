@@ -1,0 +1,196 @@
+.gl-container {
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 16px;
+}
+
+.gl-title {
+  font-size: 20px;
+  color: #95b9b4;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.gl-text {
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+.gl-intro-text {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.gl-description-mob {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.highlight {
+  font-size: 20px;
+  color: #95b9b4;
+}
+
+.gl-item-img-mob {
+  max-width: 288px;
+  height: 329px;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 24px;
+}
+
+.gl-item-descr-mob {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+@include media(mobile) {
+  .gl-desktop-only {
+    display: none;
+  }
+
+  .gl-list-mob .gl-item-mob:nth-child(2) .gl-item-img-mob {
+    background-image: url('../img/game-levels/jungle-escape-mob.png');
+  }
+
+  .gl-list-mob .gl-item-mob:nth-child(3) .gl-item-img-mob {
+    background-image: url('../img/game-levels/space-rush-mob.png');
+  }
+
+  .gl-list-mob .gl-item-mob:nth-child(4) .gl-item-img-mob {
+    background-image: url('../img/game-levels/lava-fortress-mob.png');
+  }
+
+  @media (min-resolution: 2dppx) {
+    .gl-list-mob .gl-item-mob:nth-child(1) .gl-item-img-mob {
+      background-image: url('../img/game-levels/cityscape-dash-mob@2x.png');
+    }
+
+    .gl-list-mob .gl-item-mob:nth-child(2) .gl-item-img-mob {
+      background-image: url('../img/game-levels/jungle-escape-mob@2x.png');
+    }
+
+    .gl-list-mob .gl-item-mob:nth-child(3) .gl-item-img-mob {
+      background-image: url('../img/game-levels/space-rush-mob@2x.png');
+    }
+
+    .gl-list-mob .gl-item-mob:nth-child(4) .gl-item-img-mob {
+      background-image: url('../img/game-levels/lava-fortress-mob@2x.png');
+    }
+  }
+}
+
+@include media(desktop) {
+  .gl-mobile-only {
+    display: none;
+  }
+
+  .gl-desktop-only {
+    display: block;
+  }
+
+  .gl-container {
+    max-width: 1200px;
+    padding: 0 40px;
+  }
+
+  .gl-title {
+    font-size: 36px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .highlight {
+    font-size: 32px;
+  }
+
+  .gl-text {
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 70px;
+  }
+
+  .gl-intro-text {
+    font-size: 20px;
+    margin-bottom: 140px;
+  }
+
+  .gl-list-desk {
+    margin-bottom: 50px;
+  }
+
+  .gl-description-desk {
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+
+  .gl-item-wrapper-desk {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    align-items: center;
+  }
+
+  .gl-item-desk:nth-child(odd) .gl-item-img-desk {
+    order: 2;
+  }
+
+  .gl-item-desk:nth-child(odd) .gl-item-descr-desk {
+    order: 1;
+  }
+
+  .gl-item-desk:nth-child(even) .gl-item-img-desk {
+    order: 1;
+  }
+
+  .gl-item-desk:nth-child(even) .gl-item-descr-desk {
+    order: 2;
+  }
+
+  .gl-item-img-desk {
+    width: 289px;
+    height: 466px;
+    background-size: cover;
+  }
+
+  .gl-item-descr-desk {
+    font-size: 20px;
+    max-width: 576px;
+  }
+
+  .gl-list-desk .gl-item-desk:nth-child(2) .gl-item-img-desk {
+    background-image: url('../img/game-levels/jungle-escape-desk.png');
+  }
+
+  .gl-list-desk .gl-item-desk:nth-child(3) .gl-item-img-desk {
+    background-image: url('../img/game-levels/space-rush-desk.png');
+  }
+
+  .gl-list-desk .gl-item-desk:nth-child(4) .gl-item-img-desk {
+    background-image: url('../img/game-levels/lava-fortress-desk.png');
+  }
+
+  @media (min-resolution: 2dppx) {
+    .gl-list-desk .gl-item-desk:nth-child(1) .gl-item-img-desk {
+      background-image: url('../img/game-levels/cityscape-dash-desk@2x.png');
+    }
+
+    .gl-list-desk .gl-item-desk:nth-child(2) .gl-item-img-desk {
+      background-image: url('../img/game-levels/jungle-escape-desk@2x.png');
+    }
+
+    .gl-list-desk .gl-item-desk:nth-child(3) .gl-item-img-desk {
+      background-image: url('../img/game-levels/space-rush-desk@2x.png');
+    }
+
+    .gl-list-desk .gl-item-desk:nth-child(4) .gl-item-img-desk {
+      background-image: url('../img/game-levels/lava-fortress-desk@2x.png');
+    }
+  }
+}
