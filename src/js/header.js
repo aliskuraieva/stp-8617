@@ -1,19 +1,16 @@
 const body = document.body;
-const headerOpenBtn = document.querySelector('.header-open-btn');
-const headerMobMenu = document.querySelector('.header-mob-menu');
-const headerCloseBtn = document.querySelector('.header-close-btn');
-const backdrop = document.querySelector('.header-backdrop');
-const anchorLinks = document.querySelectorAll('.header-link');
+const openBtn = document.querySelector('.open-menu-btn');
+const closeBtn = document.querySelector('.close-menu-btn');
+const mobMenu = document.querySelector('.mobile-menu');
+const anchorLinks = document.querySelectorAll('.nav-link');
 const header = document.querySelector('.header');
 
-headerOpenBtn.addEventListener('click', () => {
-  headerMobMenu.classList.add('is-open');
-  backdrop.classList.add('is-visible');
+openBtn.addEventListener('click', () => {
+  mobMenu.classList.add('is-open');
   body.classList.add('no-scroll');
 });
 
-headerCloseBtn.addEventListener('click', closeMobileMenu);
-backdrop.addEventListener('click', closeMobileMenu);
+closeBtn.addEventListener('click', closeMobileMenu);
 
 anchorLinks.forEach(link => {
   link.addEventListener('click', event => {
@@ -40,7 +37,6 @@ anchorLinks.forEach(link => {
 });
 
 function closeMobileMenu() {
-  headerMobMenu.classList.remove('is-open');
-  backdrop.classList.remove('is-visible');
+  mobMenu.classList.remove('is-open');
   body.classList.remove('no-scroll');
 }

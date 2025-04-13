@@ -1,4 +1,4 @@
-<div class="header-container container">
+<div class="header-container">
   <a href="./index.html" class="header-logo">
     <picture>
       <source
@@ -15,90 +15,34 @@
     </picture>
   </a>
 
-  <button type="button" class="header-open-btn" aria-label="open menu">
+  <button type="button" class="open-menu-btn" aria-label="open menu">
     <svg width="20" height="20">
       <use href="/img/sprite.svg#icon-burger-menu"></use>
     </svg>
   </button>
 
-  <div class="header-backdrop"></div>
-
-  <!-- -------------------- mob-menu -------------------- -->
-
-  <nav class="header-mob-menu">
-    <div class="header-menu-container">
-      <div class="header-menu-top">
-        <picture class="header-menu-logo">
-          <source
-            srcset="
-              /img/header/logo-mob-menu.png    1x,
-              /img/header/logo-mob-menu@2x.png 2x
-            "
-            type="image/png"
-            media="(max-width: 1199px)"
-          />
-          <img src="/img/header/logo-mob-menu.png" alt="Logo image" />
-        </picture>
-
-        <button type="button" class="header-close-btn" aria-label="close menu">
-          <svg width="20" height="20">
-            <use href="/img/sprite.svg#icon-close-btn"></use>
-          </svg>
-        </button>
-      </div>
-
-      <ul class="header-list">
-        <li class="header-item">
-          <a href="#hero-id" class="header-link">Home</a>
-        </li>
-        <li class="header-item">
-          <a href="#review-id" class="header-link">Game Review</a>
-        </li>
-        <li class="header-item">
-          <a href="#features-id" class="header-link">Features & Power-ups</a>
-        </li>
-        <li class="header-item">
-          <a href="#squad-id" class="header-link">Meet the Blaze Squad</a>
-        </li>
-        <li class="header-item">
-          <a href="#lb-id" class="header-link">Competitive Leaderboards</a>
-        </li>
-        <li class="header-item">
-          <a href="#gl-id" class="header-link">Game levels and challenges</a>
-        </li>
-        <li class="header-item">
-          <a href="#community-id" class="header-link"
-            >Community and social functions</a
-          >
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- -------------------- desk-nav -------------------- -->
-
-  <nav class="header-desk-nav">
+  <nav class="header-nav">
     <ul class="header-list">
       <li class="header-item">
-        <a href="#hero-id" class="header-link">Home</a>
+        <a href="#hero-id" class="nav-link">Home</a>
       </li>
       <li class="header-item">
-        <a href="#features-id" class="header-link">Features & Power-ups</a>
+        <a href="#features-id" class="nav-link">Features & Power-ups</a>
       </li>
       <li class="header-item">
-        <a href="#lb-id" class="header-link">Competitive Leaderboards</a>
+        <a href="#lb-id" class="nav-link">Competitive Leaderboards</a>
       </li>
       <li class="header-item">
-        <a href="#gl-id" class="header-link">Game levels and challenges</a>
+        <a href="#gl-id" class="nav-link">Game levels and challenges</a>
       </li>
       <li class="header-item">
-        <a href="#review-id" class="header-link">Game Review</a>
+        <a href="#review-id" class="nav-link">Game Review</a>
       </li>
       <li class="header-item">
-        <a href="#squad-id" class="header-link">Meet the Blaze Squad</a>
+        <a href="#squad-id" class="nav-link">Meet the Blaze Squad</a>
       </li>
       <li class="header-item">
-        <a href="#community-id" class="header-link"
+        <a href="#community-id" class="nav-link"
           >Community and social functions</a
         >
       </li>
