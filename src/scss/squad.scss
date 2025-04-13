@@ -35,9 +35,38 @@
   flex-direction: row-reverse;
 }
 
-.squad-card-image-box {
+.squad-card-image {
   flex: 0 0 135px;
   width: 135px;
+  height: 149px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.squad-card-list > li:nth-child(1) .squad-card-image {
+  background-image: image-set(
+    url('/img/squad/mobile/image-1.png') 1x,
+    url('/img/squad/mobile/image-1@2x.png') 2x
+  );
+}
+.squad-card-list > li:nth-child(2) .squad-card-image {
+  background-image: image-set(
+    url('/img/squad/mobile/image-2.png') 1x,
+    url('/img/squad/mobile/image-2@2x.png') 2x
+  );
+}
+.squad-card-list > li:nth-child(3) .squad-card-image {
+  background-image: image-set(
+    url('/img/squad/mobile/image-3.png') 1x,
+    url('/img/squad/mobile/image-3@2x.png') 2x
+  );
+}
+.squad-card-list > li:nth-child(4) .squad-card-image {
+  background-image: image-set(
+    url('/img/squad/mobile/image-4.png') 1x,
+    url('/img/squad/mobile/image-4@2x.png') 2x
+  );
 }
 
 .squad-card-text {
@@ -76,27 +105,45 @@
     margin-bottom: 50px;
   }
 
-  .squad-card-item {
+  .squad-card-item,
+  .squad-card-item:nth-child(2),
+  .squad-card-item:nth-child(4) {
     flex-direction: column;
     gap: 21px;
     width: 173px;
   }
 
-  .squad-card-item:nth-child(2),
-  .squad-card-item:nth-child(4) {
-    flex-direction: column;
-  }
-
-  .squad-card-image-box {
+  .squad-card-image {
     flex: none;
     width: 100%;
-    img {
-      border-radius: 100%;
-      border: 3px solid $_color_teal;
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-    }
+    height: 194px;
+    border-radius: 100%;
+    border: 3px solid $_color_teal;
+  }
+
+  .squad-card-list > li:nth-child(1) .squad-card-image {
+    background-image: image-set(
+      url('/img/squad/desktop/image-1.png') 1x,
+      url('/img/squad/desktop/image-1@2x.png') 2x
+    );
+  }
+  .squad-card-list > li:nth-child(2) .squad-card-image {
+    background-image: image-set(
+      url('/img/squad/desktop/image-2.png') 1x,
+      url('/img/squad/desktop/image-2@2x.png') 2x
+    );
+  }
+  .squad-card-list > li:nth-child(3) .squad-card-image {
+    background-image: image-set(
+      url('/img/squad/desktop/image-3.png') 1x,
+      url('/img/squad/desktop/image-3@2x.png') 2x
+    );
+  }
+  .squad-card-list > li:nth-child(4) .squad-card-image {
+    background-image: image-set(
+      url('/img/squad/desktop/image-4.png') 1x,
+      url('/img/squad/desktop/image-4@2x.png') 2x
+    );
   }
 
   .squad-card-text {
