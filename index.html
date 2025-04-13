@@ -23,7 +23,9 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/stp-8617/commonHelpers2.js"></script>
-    <link rel="stylesheet" href="/stp-8617/assets/styles-8ff31518.css">
+    <link rel="modulepreload" crossorigin href="/stp-8617/assets/vendor-3f3e8d2c.js">
+    <link rel="stylesheet" href="/stp-8617/assets/vendor-73168167.css">
+    <link rel="stylesheet" href="/stp-8617/assets/styles-adff7b25.css">
   </head>
   <body>
     <div class="cookies closed" id="cookies">
@@ -66,50 +68,56 @@
 
   <div class="header-backdrop"></div>
 
+  <!-- -------------------- mob-menu -------------------- -->
+
   <nav class="header-mob-menu">
-    <div class="header-menu-top">
-      <picture class="header-menu-logo">
-        <source
-          srcset="data:image/png;base64,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 1x, /stp-8617/assets/logo-mob-menu@2x-9002cdf1.png 2x"
-          type="image/png"
-          media="(max-width: 1199px)"
-        />
-        <img src="data:image/png;base64,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" alt="Logo image" />
-      </picture>
+    <div class="header-menu-container">
+      <div class="header-menu-top">
+        <picture class="header-menu-logo">
+          <source
+            srcset="data:image/png;base64,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 1x, /stp-8617/assets/logo-mob-menu@2x-9002cdf1.png 2x"
+            type="image/png"
+            media="(max-width: 1199px)"
+          />
+          <img src="data:image/png;base64,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" alt="Logo image" />
+        </picture>
 
-      <button type="button" class="header-close-btn" aria-label="close menu">
-        <svg width="20" height="20">
-          <use href="/stp-8617/assets/sprite-ba06efd6.svg#icon-close-btn"></use>
-        </svg>
-      </button>
+        <button type="button" class="header-close-btn" aria-label="close menu">
+          <svg width="20" height="20">
+            <use href="/stp-8617/assets/sprite-ba06efd6.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+      </div>
+
+      <ul class="header-list">
+        <li class="header-item">
+          <a href="#hero-id" class="header-link">Home</a>
+        </li>
+        <li class="header-item">
+          <a href="#review-id" class="header-link">Game Review</a>
+        </li>
+        <li class="header-item">
+          <a href="#features-id" class="header-link">Features & Power-ups</a>
+        </li>
+        <li class="header-item">
+          <a href="#squad-id" class="header-link">Meet the Blaze Squad</a>
+        </li>
+        <li class="header-item">
+          <a href="#lb-id" class="header-link">Competitive Leaderboards</a>
+        </li>
+        <li class="header-item">
+          <a href="#gl-id" class="header-link">Game levels and challenges</a>
+        </li>
+        <li class="header-item">
+          <a href="#community-id" class="header-link"
+            >Community and social functions</a
+          >
+        </li>
+      </ul>
     </div>
-
-    <ul class="header-list">
-      <li class="header-item">
-        <a href="#hero-id" class="header-link">Home</a>
-      </li>
-      <li class="header-item">
-        <a href="#review-id" class="header-link">Game Review</a>
-      </li>
-      <li class="header-item">
-        <a href="#features-id" class="header-link">Features & Power-ups</a>
-      </li>
-      <li class="header-item">
-        <a href="#squad-id" class="header-link">Meet the Blaze Squad</a>
-      </li>
-      <li class="header-item">
-        <a href="#lb-id" class="header-link">Competitive Leaderboards</a>
-      </li>
-      <li class="header-item">
-        <a href="#gl-id" class="header-link">Game levels and challenges</a>
-      </li>
-      <li class="header-item">
-        <a href="#community-id" class="header-link"
-          >Community and social functions</a
-        >
-      </li>
-    </ul>
   </nav>
+
+  <!-- -------------------- desk-nav -------------------- -->
 
   <nav class="header-desk-nav">
     <ul class="header-list">
@@ -143,22 +151,10 @@
     </header>
 
     <main>
-      <section id="hero-id">
-  <div class="hero-container container">
+      <section id="hero-id" class="hero">
+  <div class="hero-container">
     <div class="hero-image-container">
-      <picture>
-        <source
-          srcset="/stp-8617/assets/image-61ece3d8.png 1x, /stp-8617/assets/image@2x-c746dae3.png 2x"
-          type="image/png"
-          media="(min-width: 1200px)"
-        />
-        <source
-          srcset="/stp-8617/assets/image-66229a57.png 1x, /stp-8617/assets/image@2x-481628e6.png 2x"
-          type="image/png"
-          media="(max-width: 1199px)"
-        />
-        <img src="/stp-8617/assets/image-66229a57.png" alt="Hero image" />
-      </picture>
+      <div class="hero-image"></div>
     </div>
 
     <div class="hero-content">
@@ -186,94 +182,48 @@
     <h2 class="review-title">Game Review</h2>
     <div class="review-card-container">
       <ul class="review-card-list">
-        <li class="review-card-item">
-          <picture>
-            <source
-              srcset="/stp-8617/assets/image-1-1a8ce3ba.jpg 1x, /stp-8617/assets/image-1@2x-e5b0d878.jpg 2x"
-              type="image/jpg"
-              media="(min-width: 1200px)"
-            />
-            <source
-              srcset="/stp-8617/assets/image-1-a223b846.jpg 1x, /stp-8617/assets/image-1@2x-921f8154.jpg 2x"
-              type="image/jpg"
-              media="(max-width: 1199px)"
-            />
-            <img
-              src="/stp-8617/assets/image-1-a223b846.jpg"
-              alt="Review card"
-              class="review-card-image"
-            />
-          </picture>
+        <!-- -------------------- card-1 -------------------- -->
+        <li class="review-card-item" data-aos="fade-down-right">
+          <div class="review-card-frame">
+            <div class="review-card-image"></div>
+          </div>
           <p class="review-card-text">
             Join Robot Blaze Dash Adventure, an exciting running game where you
             race through different worlds, overcome obstacles and fight enemies
             while collecting power-ups!
           </p>
         </li>
-        <li class="review-card-item">
-          <picture>
-            <source
-              srcset="/stp-8617/assets/image-2-e5c4a414.jpg 1x, /stp-8617/assets/image-2@2x-9ab549cf.jpg 2x"
-              type="image/jpg"
-              media="(min-width: 1200px)"
-            />
-            <source
-              srcset="/stp-8617/assets/image-2-a9db7917.jpg 1x, /stp-8617/assets/image-2@2x-65c99ef7.jpg 2x"
-              type="image/jpg"
-              media="(max-width: 1199px)"
-            />
-            <img
-              src="/stp-8617/assets/image-2-a9db7917.jpg"
-              alt="Review card"
-              class="review-card-image"
-            />
-          </picture>
+
+        <!-- -------------------- card-2 -------------------- -->
+
+        <li class="review-card-item" data-aos="fade-down-left">
+          <div class="review-card-frame">
+            <div class="review-card-image"></div>
+          </div>
           <p class="review-card-text">
             Dynamic action with exciting challenges on the platform. Collect
             time bonuses to increase your score.
           </p>
         </li>
-        <li class="review-card-item">
-          <picture>
-            <source
-              srcset="/stp-8617/assets/image-3-2ecc31c1.jpg 1x, /stp-8617/assets/image-3@2x-e2931a98.jpg 2x"
-              type="image/jpg"
-              media="(min-width: 1200px)"
-            />
-            <source
-              srcset="/stp-8617/assets/image-3-44b3dcc5.jpg 1x, /stp-8617/assets/image-3@2x-39bb5950.jpg 2x"
-              type="image/jpg"
-              media="(max-width: 1199px)"
-            />
-            <img
-              src="/stp-8617/assets/image-3-44b3dcc5.jpg"
-              alt="Review card"
-              class="review-card-image"
-            />
-          </picture>
+
+        <!-- -------------------- card-3 -------------------- -->
+
+        <li class="review-card-item" data-aos="fade-up-right">
+          <div class="review-card-frame">
+            <div class="review-card-image"></div>
+          </div>
           <p class="review-card-text">
             Dodge, jump and shoot to overcome dangerous enemies. Simple controls
             - run, jump and clear obstacles!
           </p>
         </li>
-        <li class="review-card-item">
-          <picture>
-            <source
-              srcset="/stp-8617/assets/image-4-f56600fd.jpg 1x, /stp-8617/assets/image-4@2x-00c597cb.jpg 2x"
-              type="image/jpg"
-              media="(min-width: 1200px)"
-            />
-            <source
-              srcset="/stp-8617/assets/image-4-aed36916.jpg 1x, /stp-8617/assets/image-4@2x-09397c3d.jpg 2x"
-              type="image/jpg"
-              media="(max-width: 1199px)"
-            />
-            <img
-              src="/stp-8617/assets/image-4-aed36916.jpg"
-              alt="Review card"
-              class="review-card-image"
-            />
-          </picture>
+
+        <!-- -------------------- card-4 -------------------- -->
+
+        <li class="review-card-item" data-aos="fade-up-left">
+          <div class="review-card-frame">
+            <div class="review-card-image"></div>
+          </div>
           <p class="review-card-text">
             No pay-to-win mechanics - enjoy free gameplay!
           </p>
@@ -311,26 +261,10 @@
             Extra seconds to complete challenging stages.
           </p>
         </div>
-        <div class="features-card-content">
-          <div class="feature-image-box-horizon">
-            <div class="feature-image-frame feature-image-frame-right">
-              <picture>
-                <source
-                  srcset="/stp-8617/assets/image-1-b1a93720.jpg 1x, /stp-8617/assets/image-1@2x-1f99c77a.jpg 2x"
-                  type="image/jpg"
-                  media="(min-width: 1200px)"
-                />
-                <source
-                  srcset="/stp-8617/assets/image-1-b8ec1d84.jpg 1x, /stp-8617/assets/image-1@2x-07694669.jpg 2x"
-                  type="image/jpg"
-                  media="(max-width: 1199px)"
-                />
-                <img
-                  src="/stp-8617/assets/image-1-b8ec1d84.jpg"
-                  alt="Review card"
-                  class="feature-image feature-image-right"
-                />
-              </picture>
+        <div class="features-card-content" data-aos="zoom-in-right">
+          <div class="feature-image-box">
+            <div class="feature-image-frame">
+              <div class="feature-image"></div>
             </div>
           </div>
 
@@ -352,9 +286,9 @@
             Temporary invincibility against obstacles.
           </p>
         </div>
-        <div class="features-card-content">
-          <div class="feature-image-box-horizon">
-            <div class="feature-image-frame feature-image-frame-left">
+        <div class="features-card-content" data-aos="zoom-in-left">
+          <div class="feature-image-box">
+            <div class="feature-image-frame">
               <div class="image-rotator feature-image" data-id="card-2">
                 <img src="" srcset="" alt="Rotating image" />
               </div>
@@ -385,10 +319,10 @@
             with updated attacks!
           </p>
         </div>
-        <div class="features-card-content">
-          <div class="feature-image-box-vertical">
+        <div class="features-card-content" data-aos="zoom-in-right">
+          <div class="feature-image-box">
             <div class="feature-image-frame">
-              <div class="image-rotator" data-id="card-3">
+              <div class="image-rotator feature-image" data-id="card-3">
                 <img src="" srcset="" alt="Rotating image" />
               </div>
             </div>
@@ -425,10 +359,10 @@
             extremely high speeds, often with upgraded or modified attacks.
           </p>
         </div>
-        <div class="features-card-content">
-          <div class="feature-image-box-vertical">
+        <div class="features-card-content" data-aos="zoom-in-left">
+          <div class="feature-image-box">
             <div class="feature-image-frame">
-              <div class="image-rotator" data-id="card-4">
+              <div class="image-rotator feature-image" data-id="card-4">
                 <img src="" srcset="" alt="Rotating image" />
               </div>
             </div>
@@ -467,22 +401,8 @@
     <ul class="squad-card-list">
       <!-- -------------------- card-1 -------------------- -->
 
-      <li class="squad-card-item">
-        <div class="squad-card-image-box">
-          <picture>
-            <source
-              srcset="/stp-8617/assets/image-1-c7cb4693.png 1x, /stp-8617/assets/image-1@2x-a5249dfc.png 2x"
-              type="image/png"
-              media="(min-width: 1200px)"
-            />
-            <source
-              srcset="/stp-8617/assets/image-1-08963915.png 1x, /stp-8617/assets/image-1@2x-d27e8713.png 2x"
-              type="image/png"
-              media="(max-width: 1199px)"
-            />
-            <img src="/stp-8617/assets/image-1-08963915.png" alt="Card image" />
-          </picture>
-        </div>
+      <li class="squad-card-item" data-aos="fade-up">
+        <div class="squad-card-image-box squad-card-image"></div>
         <p class="squad-card-text">
           Blaze is a fearless runner with unparalleled speed
         </p>
@@ -490,43 +410,15 @@
 
       <!-- -------------------- card-2 -------------------- -->
 
-      <li class="squad-card-item">
-        <div class="squad-card-image-box">
-          <picture>
-            <source
-              srcset="/stp-8617/assets/image-2-f60b4c3a.png 1x, /stp-8617/assets/image-2@2x-fd659410.png 2x"
-              type="image/png"
-              media="(min-width: 1200px)"
-            />
-            <source
-              srcset="/stp-8617/assets/image-2-3d509937.png 1x, /stp-8617/assets/image-2@2x-6297f885.png 2x"
-              type="image/png"
-              media="(max-width: 1199px)"
-            />
-            <img src="/stp-8617/assets/image-2-3d509937.png" alt="Card image" />
-          </picture>
-        </div>
+      <li class="squad-card-item" data-aos="fade-down">
+        <div class="squad-card-image-box squad-card-image"></div>
         <p class="squad-card-text">Energy-powered volt warrior</p>
       </li>
 
       <!-- -------------------- card-3 -------------------- -->
 
-      <li class="squad-card-item">
-        <div class="squad-card-image-box">
-          <picture>
-            <source
-              srcset="/stp-8617/assets/image-3-736c9883.png 1x, /stp-8617/assets/image-3@2x-66a069d2.png 2x"
-              type="image/png"
-              media="(min-width: 1200px)"
-            />
-            <source
-              srcset="/stp-8617/assets/image-3-931f1aa7.png 1x, /stp-8617/assets/image-3@2x-9775a373.png 2x"
-              type="image/png"
-              media="(max-width: 1199px)"
-            />
-            <img src="/stp-8617/assets/image-3-931f1aa7.png" alt="Card image" />
-          </picture>
-        </div>
+      <li class="squad-card-item" data-aos="fade-up">
+        <div class="squad-card-image-box squad-card-image"></div>
         <p class="squad-card-text">
           Gearbot is a mechanical genius with powerful weapons
         </p>
@@ -534,22 +426,8 @@
 
       <!-- -------------------- card-4 -------------------- -->
 
-      <li class="squad-card-item">
-        <div class="squad-card-image-box">
-          <picture>
-            <source
-              srcset="/stp-8617/assets/image-4-a293b125.png 1x, /stp-8617/assets/image-4@2x-217562f3.png 2x"
-              type="image/png"
-              media="(min-width: 1200px)"
-            />
-            <source
-              srcset="/stp-8617/assets/image-4-4f197cb8.png 1x, /stp-8617/assets/image-4@2x-8eafce58.png 2x"
-              type="image/png"
-              media="(max-width: 1199px)"
-            />
-            <img src="/stp-8617/assets/image-4-4f197cb8.png" alt="Card image" />
-          </picture>
-        </div>
+      <li class="squad-card-item" data-aos="fade-down">
+        <div class="squad-card-image-box squad-card-image"></div>
         <p class="squad-card-text">
           Terra Sentinel with an impenetrable shield.
         </p>
@@ -1056,26 +934,26 @@
     </main>
 
     <footer>
-      <div class="footer-container container">
-  <div class="footer-nav">
-    <ul class="footer-list">
-      <li>
-        <a href="./privacy-policy.html"
-          >Privacy Policy<span class="footer-span-desk">|</span></a
-        >
-      </li>
-      <li>
-        <a href="./terms-and-conditions.html"
-          >Terms & Conditions<span class="footer-span-desk">|</span></a
-        >
-      </li>
-      <li>
-        <a href="./cookies-policy.html">Cookies Policy</a>
-      </li>
-    </ul>
+      <footer class="footer" id="footer">
+  <div class="footer-container">
+    <div class="footer-nav">
+      <ul class="footer-list">
+        <li>
+          <a href="./privacy-policy.html"> Privacy Policy </a>
+        </li>
+        <li class="footer-span-desk"><span>|</span></li>
+        <li>
+          <a href="./terms-and-conditions.html"> Terms & Conditions </a>
+        </li>
+        <li class="footer-span-desk"><span>|</span></li>
+        <li>
+          <a href="./cookies-policy.html">Cookies Policy</a>
+        </li>
+      </ul>
+    </div>
+    <p class="footer-copy">All Rights Reserved fusionstarforce.com | 2025</p>
   </div>
-  <p class="footer-copy">All Rights Reserved fusionstarforce.com | 2025</p>
-</div>
+</footer>
 
     </footer>
     
