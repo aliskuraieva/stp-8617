@@ -1,97 +1,78 @@
-const animations = {
-  'cityscape-dash-mob': [
-    {
-      src: './img/game-levels/cityscape-dash-mob-1.png',
-      retina: './img/game-levels/cityscape-dash-mob-1@2x.png',
-    },
-    {
-      src: './img/game-levels/cityscape-dash-mob-2.png',
-      retina: './img/game-levels/cityscape-dash-mob-2@2x.png',
-    },
-    {
-      src: './img/game-levels/cityscape-dash-mob-3.png',
-      retina: './img/game-levels/cityscape-dash-mob-3@2x.png',
-    },
-  ],
-  'cityscape-dash-desk': [
-    {
-      src: './img/game-levels/cityscape-dash-desk-1.png',
-      retina: './img/game-levels/cityscape-dash-desk-1@2x.png',
-    },
-    {
-      src: './img/game-levels/cityscape-dash-desk-2.png',
-      retina: './img/game-levels/cityscape-dash-desk-2@2x.png',
-    },
-    {
-      src: './img/game-levels/cityscape-dash-desk-3.png',
-      retina: './img/game-levels/cityscape-dash-desk-3@2x.png',
-    },
-  ],
-  'space-rush-mob': [
-    {
-      src: './img/game-levels/space-rush-mob-1.png',
-      retina: './img/game-levels/space-rush-mob-1@2x.png',
-    },
-    {
-      src: './img/game-levels/space-rush-mob-2.png',
-      retina: './img/game-levels/space-rush-mob-2@2x.png',
-    },
-    {
-      src: './img/game-levels/space-rush-mob-3.png',
-      retina: './img/game-levels/space-rush-mob-3@2x.png',
-    },
-  ],
-  'space-rush-desk': [
-    {
-      src: './img/game-levels/space-rush-desk-1.png',
-      retina: './img/game-levels/space-rush-desk-1@2x.png',
-    },
-    {
-      src: './img/game-levels/space-rush-desk-2.png',
-      retina: './img/game-levels/space-rush-desk-2@2x.png',
-    },
-    {
-      src: './img/game-levels/space-rush-desk-3.png',
-      retina: './img/game-levels/space-rush-desk-3@2x.png',
-    },
-  ],
-};
+const images = import.meta.glob('../img/game-levels/**/*.{png,jpg}', {
+  eager: true,
+  import: 'default',
+});
 
-const animateImages = selector => {
-  const elements = document.querySelectorAll(selector);
+function createAnimation(container, animationName) {
+  const img =
+    container.querySelector('img') ||
+    (() => {
+      const newImg = document.createElement('img');
+      container.appendChild(newImg);
+      return newImg;
+    })();
 
-  elements.forEach(el => {
-    const name = el.dataset.name;
-    const imageList = animations[name];
+  const isDesktop = () => container.classList.contains('gl-item-img-desk');
+  let group = isDesktop() ? 'desk' : 'mob';
+  let index = 0;
+  let intervalId = null;
 
-    if (!imageList) return;
+  function resolveImagePath(name, frame, is2x = false) {
+    const suffix = is2x ? '@2x' : '';
+    const file = `../img/game-levels/${name}-${frame}${suffix}.png`;
+    return images[file];
+  }
 
-    let currentIndex = 0;
+  const frames = [1, 2, 3].map(i => ({
+    src: resolveImagePath(`${animationName}`, i),
+    src2x: resolveImagePath(`${animationName}`, i, true),
+  }));
 
-    setInterval(() => {
-      currentIndex = (currentIndex + 1) % imageList.length;
-      const newImage =
-        window.devicePixelRatio > 1
-          ? imageList[currentIndex].retina
-          : imageList[currentIndex].src;
+  function setImage(i) {
+    const { src, src2x } = frames[i];
+    img.classList.remove('active');
 
-      let img = el.querySelector('img');
-      if (!img) {
-        img = document.createElement('img');
-        el.appendChild(img);
-      }
+    setTimeout(() => {
+      img.src = src;
+      img.srcset = `${src} 1x, ${src2x} 2x`;
+      img.onload = () => {
+        requestAnimationFrame(() => {
+          img.classList.add('active');
+        });
+      };
+    }, 300);
+  }
 
-      img.src = newImage;
-
-      const allImgs = el.querySelectorAll('img');
-      allImgs.forEach(image => {
-        image.classList.remove('active');
-      });
-
-      img.classList.add('active');
+  function startRotation() {
+    if (intervalId) return;
+    intervalId = setInterval(() => {
+      index = (index + 1) % frames.length;
+      setImage(index);
     }, 1000);
-  });
-};
+  }
 
-animateImages('.gl-item-img-mob');
-animateImages('.gl-item-img-desk');
+  function stopRotation() {
+    clearInterval(intervalId);
+    intervalId = null;
+  }
+
+  window.addEventListener('resize', () => {
+    const newGroup = isDesktop() ? 'desk' : 'mob';
+    if (newGroup !== group) {
+      group = newGroup;
+      index = 0;
+      setImage(index);
+    }
+  });
+
+  setImage(index);
+  startRotation();
+}
+
+document
+  .querySelectorAll('.gl-item-img-mob, .gl-item-img-desk')
+  .forEach(container => {
+    const name = container.dataset.name;
+    if (!name) return;
+    createAnimation(container, name);
+  });
