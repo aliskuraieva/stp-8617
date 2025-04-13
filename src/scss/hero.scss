@@ -4,26 +4,40 @@
   background-color: $_color_blue;
   width: 100%;
   scroll-margin-top: 40px;
+  background: transparent !important;
 }
 
 .hero-image-container {
   width: 100%;
   padding: 20px 32px;
-  @media (max-width: 1199px) {
-    background-image: image-set(
-      url('/img/hero/mobile/background.png') 1x,
-      url('/img/hero/mobile/background@2x.png') 2x
-    );
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+  width: 100%;
+  background-image: image-set(
+    url('/img/hero/mobile/background.png') 1x,
+    url('/img/hero/mobile/background@2x.png') 2x
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.hero-image {
+  width: 100%;
+  height: 255px;
+  background-image: image-set(
+    url('/img/hero/mobile/image.png') 1x,
+    url('/img/hero/mobile/image@2x.png') 2x
+  );
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-content {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  width: 320px;
+  margin: 0 auto;
   padding: 24px 16px 0 16px;
 }
 
@@ -61,18 +75,38 @@
 }
 
 @include media(desktop) {
-  .hero-container {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 48px;
-    padding: 149px 40px 31px 40px;
+  .hero {
+    width: 100%;
     background-image: image-set(
       url('/img/hero/desktop/background.png') 1x,
       url('/img/hero/desktop/background@2x.png') 2x
     );
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
+  }
+
+  .hero-container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 48px;
+    margin: 0 auto;
+    width: 1200px;
+    padding: 149px 40px 36px 40px;
+  }
+
+  .hero-image-container {
+    flex: 0 0 500px;
+    padding: 0;
+    background: none;
+  }
+
+  .hero-image {
+    height: 500px;
+    background-image: image-set(
+      url('/img/hero/desktop/image.png') 1x,
+      url('/img/hero/desktop/image@2x.png') 2x
+    );
   }
 
   .hero-content {
@@ -94,10 +128,5 @@
     position: absolute;
     right: 0;
     bottom: 0;
-  }
-
-  .hero-image-container {
-    flex: 0 0 500px;
-    padding: 0;
   }
 }
