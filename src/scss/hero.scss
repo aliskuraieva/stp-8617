@@ -9,7 +9,7 @@
 
 .hero-image-container {
   width: 100%;
-  padding: 20px 32px;
+  padding: 60px 32px 20px 32px;
   width: 100%;
   background-image: image-set(
     url('/img/hero/mobile/background.png') 1x,
@@ -42,7 +42,6 @@
 }
 
 .hero-title {
-  font-weight: 400;
   font-size: 32px;
   color: $_color_light;
 }
@@ -52,7 +51,6 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  font-weight: 400;
   font-size: 24px;
   color: #1e1e1e;
   border-radius: 16px;
@@ -69,7 +67,6 @@
 }
 
 .hero-text {
-  font-weight: 400;
   font-size: 20px;
   color: $_color_light;
 }

@@ -3,7 +3,6 @@
 }
 
 .squad-title {
-  font-weight: 400;
   font-size: 20px;
   color: $_color_teal;
   text-align: center;
@@ -11,7 +10,6 @@
 }
 
 .squad-description {
-  font-weight: 400;
   font-size: 16px;
   color: $_color_light;
   margin-bottom: 30px;
@@ -71,13 +69,11 @@
 
 .squad-card-text {
   flex: 1;
-  font-weight: 400;
   font-size: 12px;
   color: $_color_light;
 }
 
 .squad-text-end {
-  font-weight: 400;
   font-size: 16px;
   color: $_color_light;
   text-align: center;
