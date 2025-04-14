@@ -15,6 +15,16 @@
 
 .community-intro {
   font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.community-social-list {
+  display: flex;
+  gap: 24px;
+}
+
+.community-social-icons {
+  fill: #007aff;
 }
 
 .community-list-mobile {
@@ -53,6 +63,7 @@
 }
 
 .community-title-mobile {
+  margin-top: 80px;
   margin-bottom: 50px;
   font-size: 20px;
   color: #95b9b4;
@@ -196,7 +207,7 @@
   }
 
   .community-container {
-    padding: 140px 40px 140px 40px;
+    padding: 140px 40px 125px 40px;
   }
 
   .community-title {
@@ -252,6 +263,24 @@
   .community-span-desk {
     font-size: 32px;
     color: #95b9b4;
+  }
+
+  .community-social-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .community-intro {
+    font-size: 20px;
+  }
+
+  .community-social-list {
+  }
+
+  .community-social-icons {
+    width: 48px;
+    height: 48px;
   }
 
   .community-item-img-desk.football {
